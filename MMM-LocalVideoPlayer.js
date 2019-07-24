@@ -2,7 +2,7 @@ Module.register("MMM-LocalVideoPlayer", {
   defaults: {},
 
 getStyles: function(){
-	return ["Chungus.css"];
+	return ["LocalVideoPlayer.css"];
 },
 
   start: function () {},
