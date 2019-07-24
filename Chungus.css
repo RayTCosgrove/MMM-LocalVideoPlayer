@@ -3,7 +3,9 @@ video, input {
 }
 
 video{
-	margin-right: 50%;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 input {

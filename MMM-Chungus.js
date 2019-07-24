@@ -3,7 +3,7 @@ Module.register("MMM-Chungus", {
 
 getStyles: function(){
 	return ["Chungus.css"];
-}
+},
 
   start: function () {},
 
@@ -29,6 +29,7 @@ getStyles: function(){
   	var video =  document.createElement("video");
 				video.autoplay = true;
 				video.loop = true;
+				video.controls = true;
 
   	var input = document.createElement("input");
 
