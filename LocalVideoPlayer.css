@@ -1,0 +1,15 @@
+video, input {
+    display: block;
+}
+
+video{
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	object-fit: cover;
+
+}
+
+input {
+    width: 100%;       
+}
