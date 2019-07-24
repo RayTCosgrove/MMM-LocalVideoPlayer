@@ -2,6 +2,10 @@ video, input {
     display: block;
 }
 
+video{
+	margin-right: 50%;
+}
+
 input {
     width: 100%;       
 }

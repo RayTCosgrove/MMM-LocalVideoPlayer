@@ -1,4 +1,4 @@
-Module.register("MMM-Timetable", {
+Module.register("MMM-Chungus", {
   defaults: {},
 
 getStyles: function(){
@@ -7,21 +7,22 @@ getStyles: function(){
 
   start: function () {},
 
-  playSelectedFile: function(){
+  
+  getDom: function() {
+
+  	var playSelectedFile = function(){
   	
   	var file = this.files[0];
   	var type = file.type;
 
-  	var inputNode = document.querySelector('input');
-    inputNode.addEventListener('change', playSelectedFile, false);
+  	
 
     var fileURL = URL.createObjectURL(file);
 
     var videoNode = document.querySelector('video');
     videoNode.src = fileURL;
 
-  },
-  getDom: function() {
+  }
 
   	var element = document.createElement("div");
 
@@ -30,8 +31,14 @@ getStyles: function(){
 				video.loop = true;
 
   	var input = document.createElement("input");
-    input.type = "video";
+
+
+    
+    input.type = "file";
     input.accept = "video/*";
+
+    input.addEventListener('change', playSelectedFile, false);
+
     
     element.appendChild(input);
     element.appendChild(video);
